@@ -132,6 +132,11 @@ Official Docs : https://rclone.org/s3/#configuration
         #our Example
         rclone copy s3bucket:testbucketunimportant/ gdrive:/testbucketunimportant
 
+- If u want to copy to a shared Google Drive 
+
+        rclone copy s3bucket:testbucketunimportant/ gdrive:/testbucketunimportant --drive-shared-with-me
+
+
 - This will clone the entire S3 Bucket to that Folder. You can also specify a Partiular Folder.
 
 
