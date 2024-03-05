@@ -125,17 +125,18 @@ Official Docs : https://rclone.org/s3/#configuration
 
 ## Copying from s3 Bucket to Google Drive
 
-- Rclone copy s3 -> google drive
+- Rclone copy S3 -> google drive
 
         rclone copy s3bucket:bucket/path gdrive:folder
 
         #our Example
         rclone copy s3bucket:testbucketunimportant/ gdrive:/testbucketunimportant
 
-- If u want to copy to a shared Google Drive 
+- If u want to copy to a **shared Google Drive**
 
-        rclone copy s3bucket:testbucketunimportant/ gdrive:/testbucketunimportant --drive-shared-with-me
+        rclone copy s3bucket:bucket/path gdrive:folder --drive-shared-with-me
 
+- use `-v` to see the copying status and `--progress` to see Progress
 
 - This will clone the entire S3 Bucket to that Folder. You can also specify a Partiular Folder.
 
